@@ -10,16 +10,16 @@ class BankAccount {
     public void deposit(double amount) {
         if (amount > 0) {
             balance += amount;
-            System.out.println("✅ Deposited: " + amount);
+            System.out.println(" Deposited: " + amount);
         } else {
-            System.out.println("❌ Invalid deposit amount!");
+            System.out.println("Invalid deposit amount!");
         }
     }
 
     public void withdraw(double amount) {
         if (amount > 0 && amount <= balance) {
             balance -= amount;
-            System.out.println("✅ Withdrawn: " + amount);
+            System.out.println(" Withdrawn: " + amount);
         } else {
             System.out.println("❌ Insufficient funds or invalid amount!");
         }
@@ -63,14 +63,15 @@ public class BankSystem {
                     break;
 
                 case 4:
-                    System.out.println("👋 Thank you for using our bank system!");
+                    System.out.println(" Thank you for using our bank system!");
                     break;
 
                 default:
-                    System.out.println("❌ Invalid choice. Try again.");
+                    System.out.println(" Invalid choice. Try again.");
             }
         } while (choice != 4);
 
         sc.close();
     }
 }
+
